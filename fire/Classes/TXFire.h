@@ -29,3 +29,5 @@
 #import "UIView+TXChainable.h"
 #import "UILabel+TXChainable.h"
 #import "UIScrollView+TXFire.h"
+#import "UIScrollView+TXPage.h"
+#import "TXTouchableScrollView.h"

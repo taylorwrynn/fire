@@ -29,6 +29,8 @@
 		B73A09DC1E690E27006E8FAB /* UIViewController+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A09DB1E690E27006E8FAB /* UIViewController+TXFire.m */; };
 		B73A09DF1E690F52006E8FAB /* UIApplication+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A09DE1E690F52006E8FAB /* UIApplication+TXFire.m */; };
 		B73A09E21E6919B9006E8FAB /* UIView+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A09E11E6919B9006E8FAB /* UIView+TXFire.m */; };
+		B78FC4BB1E6FEE95007F33CA /* TXTouchableScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B78FC4BA1E6FEE95007F33CA /* TXTouchableScrollView.m */; };
+		B78FC4BE1E6FEF66007F33CA /* UIScrollView+TXPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B78FC4BD1E6FEF66007F33CA /* UIScrollView+TXPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,10 @@
 		B73A09DE1E690F52006E8FAB /* UIApplication+TXFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TXFire.m"; sourceTree = "<group>"; };
 		B73A09E01E6919B9006E8FAB /* UIView+TXFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXFire.h"; sourceTree = "<group>"; };
 		B73A09E11E6919B9006E8FAB /* UIView+TXFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXFire.m"; sourceTree = "<group>"; };
+		B78FC4B91E6FEE95007F33CA /* TXTouchableScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTouchableScrollView.h; sourceTree = "<group>"; };
+		B78FC4BA1E6FEE95007F33CA /* TXTouchableScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTouchableScrollView.m; sourceTree = "<group>"; };
+		B78FC4BC1E6FEF66007F33CA /* UIScrollView+TXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TXPage.h"; sourceTree = "<group>"; };
+		B78FC4BD1E6FEF66007F33CA /* UIScrollView+TXPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TXPage.m"; sourceTree = "<group>"; };
 		D231806E0A0C083459E16B27 /* Pods-fire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire.release.xcconfig"; path = "Pods/Target Support Files/Pods-fire/Pods-fire.release.xcconfig"; sourceTree = "<group>"; };
 		ECD3B96A516DBED7223747F4 /* Pods-fire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fire/Pods-fire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,6 +267,10 @@
 				B728B5B01E6947F0009F943F /* UILabel+TXChainable.m */,
 				B728B5B51E69489C009F943F /* UIScrollView+TXFire.h */,
 				B728B5B61E69489C009F943F /* UIScrollView+TXFire.m */,
+				B78FC4BC1E6FEF66007F33CA /* UIScrollView+TXPage.h */,
+				B78FC4BD1E6FEF66007F33CA /* UIScrollView+TXPage.m */,
+				B78FC4B91E6FEE95007F33CA /* TXTouchableScrollView.h */,
+				B78FC4BA1E6FEE95007F33CA /* TXTouchableScrollView.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -470,9 +480,11 @@
 				B73A09DF1E690F52006E8FAB /* UIApplication+TXFire.m in Sources */,
 				B73A09C51E6859B8006E8FAB /* NSBundle+TXFire.m in Sources */,
 				B73A09DC1E690E27006E8FAB /* UIViewController+TXFire.m in Sources */,
+				B78FC4BB1E6FEE95007F33CA /* TXTouchableScrollView.m in Sources */,
 				B728B5B11E6947F0009F943F /* UILabel+TXChainable.m in Sources */,
 				B73A09CB1E68F3D5006E8FAB /* NSString+TXFire.m in Sources */,
 				B73A09D61E690322006E8FAB /* UIColor+TXFire.m in Sources */,
+				B78FC4BE1E6FEF66007F33CA /* UIScrollView+TXPage.m in Sources */,
 				B728B5B41E69481C009F943F /* UIView+TXChainable.m in Sources */,
 				B73A09C81E685A74006E8FAB /* NSRegularExpression+TXFire.m in Sources */,
 				B73A09E21E6919B9006E8FAB /* UIView+TXFire.m in Sources */,
