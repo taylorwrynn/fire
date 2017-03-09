@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TXFire"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Fire Objective-C Project"
   s.homepage     = "https://github.com/taylorwrynn/fire"
 

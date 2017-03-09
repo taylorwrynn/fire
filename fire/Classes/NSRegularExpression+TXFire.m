@@ -14,7 +14,7 @@
 
 + (instancetype)tx_regularExpressionWithPattern:(NSString *)pattern
 {
-    return [self tx_regularExpressionWithPattern:pattern caseInsensitive:NO];
+    return [self tx_regularExpressionWithPattern:pattern caseInsensitive:YES];
 }
 
 + (instancetype)tx_regularExpressionWithPattern:(NSString *)pattern caseInsensitive:(BOOL)caseInsensitive

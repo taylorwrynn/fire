@@ -11,13 +11,11 @@
 #ifndef log_h
 #define log_h
 
+#import <ReactiveObjC/RACmetamacros.h>
+
 #define TXLog(fmt, ...) NSLog((@"%s [Line %d] %@" fmt), __PRETTY_FUNCTION__, __LINE__, [NSThread currentThread], ##__VA_ARGS__)
-#ifdef metamacro_foreach
 #define TXLogVars(...) metamacro_foreach(TXLogIterItem,, __VA_ARGS__)
 #define TXLogIterItem(INDEX, VAR) TXLog(@"%s: %@", #VAR, (VAR));
-#else
-#define TXLogVars(...)
-#endif
 
 #if !defined(Dlog) && !defined(Dlogvars)
 #ifdef DEBUG

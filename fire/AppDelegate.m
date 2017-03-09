@@ -25,6 +25,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    Dlogvars(@"abc", @"def");
+    
     UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     viewController.view.backgroundColor = [UIColor whiteColor];
     viewController.navigationItem.title = @"Test";
