@@ -31,6 +31,8 @@
 		B73A09E21E6919B9006E8FAB /* UIView+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A09E11E6919B9006E8FAB /* UIView+TXFire.m */; };
 		B78FC4BB1E6FEE95007F33CA /* TXTouchableScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B78FC4BA1E6FEE95007F33CA /* TXTouchableScrollView.m */; };
 		B78FC4BE1E6FEF66007F33CA /* UIScrollView+TXPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B78FC4BD1E6FEF66007F33CA /* UIScrollView+TXPage.m */; };
+		B7A89D091E7D91C80020F186 /* UIImage+TXGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A89D081E7D91C80020F186 /* UIImage+TXGIF.m */; };
+		B7A89D0C1E7EC2310020F186 /* NSIndexSet+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A89D0B1E7EC2310020F186 /* NSIndexSet+TXFire.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,10 @@
 		B78FC4BA1E6FEE95007F33CA /* TXTouchableScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTouchableScrollView.m; sourceTree = "<group>"; };
 		B78FC4BC1E6FEF66007F33CA /* UIScrollView+TXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TXPage.h"; sourceTree = "<group>"; };
 		B78FC4BD1E6FEF66007F33CA /* UIScrollView+TXPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TXPage.m"; sourceTree = "<group>"; };
+		B7A89D071E7D91C80020F186 /* UIImage+TXGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TXGIF.h"; sourceTree = "<group>"; };
+		B7A89D081E7D91C80020F186 /* UIImage+TXGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TXGIF.m"; sourceTree = "<group>"; };
+		B7A89D0A1E7EC2310020F186 /* NSIndexSet+TXFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+TXFire.h"; sourceTree = "<group>"; };
+		B7A89D0B1E7EC2310020F186 /* NSIndexSet+TXFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+TXFire.m"; sourceTree = "<group>"; };
 		D231806E0A0C083459E16B27 /* Pods-fire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire.release.xcconfig"; path = "Pods/Target Support Files/Pods-fire/Pods-fire.release.xcconfig"; sourceTree = "<group>"; };
 		ECD3B96A516DBED7223747F4 /* Pods-fire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fire/Pods-fire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +240,8 @@
 				B73A09C41E6859B8006E8FAB /* NSBundle+TXFire.m */,
 				B73A09C61E685A74006E8FAB /* NSRegularExpression+TXFire.h */,
 				B73A09C71E685A74006E8FAB /* NSRegularExpression+TXFire.m */,
+				B7A89D0A1E7EC2310020F186 /* NSIndexSet+TXFire.h */,
+				B7A89D0B1E7EC2310020F186 /* NSIndexSet+TXFire.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -255,6 +263,8 @@
 				B73A09D51E690322006E8FAB /* UIColor+TXFire.m */,
 				B73A09D71E69099F006E8FAB /* UIImage+TXFire.h */,
 				B73A09D81E69099F006E8FAB /* UIImage+TXFire.m */,
+				B7A89D071E7D91C80020F186 /* UIImage+TXGIF.h */,
+				B7A89D081E7D91C80020F186 /* UIImage+TXGIF.m */,
 				B73A09DA1E690E27006E8FAB /* UIViewController+TXFire.h */,
 				B73A09DB1E690E27006E8FAB /* UIViewController+TXFire.m */,
 				B73A09DD1E690F52006E8FAB /* UIApplication+TXFire.h */,
@@ -468,10 +478,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A89D0C1E7EC2310020F186 /* NSIndexSet+TXFire.m in Sources */,
 				B73A09CE1E68F4A9006E8FAB /* NSURL+TXFire.m in Sources */,
 				B73A09D91E69099F006E8FAB /* UIImage+TXFire.m in Sources */,
 				B73A09C21E685981006E8FAB /* NSDate+TXFire.m in Sources */,
 				B73A09BC1E6855D2006E8FAB /* NSArray+TXFire.m in Sources */,
+				B7A89D091E7D91C80020F186 /* UIImage+TXGIF.m in Sources */,
 				B73A09B91E6854E1006E8FAB /* NSDictionary+TXFire.m in Sources */,
 				B728B5B71E69489C009F943F /* UIScrollView+TXFire.m in Sources */,
 				B73A09871E684D71006E8FAB /* AppDelegate.m in Sources */,

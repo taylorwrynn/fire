@@ -9,6 +9,8 @@
  */
 
 #import "UIImage+TXFire.h"
+#import <ImageIO/ImageIO.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 static void tx_CGContextFill(CGContextRef context, UIColor *color, CGRect rect, BOOL ellipse)
 {
@@ -60,7 +62,5 @@ static void tx_CGContextFill(CGContextRef context, UIColor *color, CGRect rect, 
 {
     return [self tx_imageWithColor:color size:CGSizeMake(1.f, 1.f) ellipse:NO];
 }
-
-
 
 @end

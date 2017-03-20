@@ -63,6 +63,15 @@ typedef NS_OPTIONS(NSInteger, TXViewPosition) {
  */
 - (nullable __kindof UIView *)tx_closestViewWithClass:(Class)cls;
 
+/// like [UIView viewWithTag:], but using block as condition.
+- (nullable __kindof UIView *)tx_findView:(BOOL(^)(__kindof UIView *view))filter;
+- (nullable __kindof UIView *)tx_findViewWithClass:(Class)cls;
+
+- (nullable NSArray<__kindof UIView *> *)tx_findViews:(BOOL(^)(__kindof UIView *view))filter;
+- (nullable NSArray<__kindof UIView *> *)tx_findViewsWithClass:(Class)cls;
+
+- (void)tx_removeSubviews;
+
 @end
 
 NS_ASSUME_NONNULL_END

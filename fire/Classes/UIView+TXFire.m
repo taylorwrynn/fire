@@ -145,4 +145,64 @@
     }];
 }
 
+- (__kindof UIView *)tx_findView:(BOOL (^)(__kindof UIView * _Nonnull))filter
+{
+    UIView *view = self;
+    if (filter(view))
+    {
+        return view;
+    }
+    for (UIView *subview in view.subviews)
+    {
+        return [subview tx_findView:filter];
+    }
+    return nil;
+}
+
+- (__kindof UIView *)tx_findViewWithClass:(Class)cls
+{
+    return [self tx_findView:^BOOL(__kindof UIView * _Nonnull view) {
+        return [view isKindOfClass:cls];
+    }];
+}
+
+- (void)tx_findView:(UIView *)view appendToArray:(NSMutableArray *)array filter:(BOOL (^)(__kindof UIView * _Nonnull))filter
+{
+    if (filter(view))
+    {
+        [array addObject:view];
+        return;
+    }
+    for (UIView *subview in view.subviews)
+    {
+        [self tx_findView:subview appendToArray:array filter:filter];
+    }
+}
+
+- (nullable NSArray<__kindof UIView *> *)tx_findViews:(BOOL(^)(__kindof UIView *view))filter
+{
+    NSMutableArray *results = [NSMutableArray array];
+    [self tx_findView:self appendToArray:results filter:filter];
+    if (results)
+    {
+        return results.copy;
+    }
+    return nil;
+}
+
+- (nullable NSArray<__kindof UIView *> *)tx_findViewsWithClass:(Class)cls
+{
+    return [self tx_findViews:^BOOL(__kindof UIView * _Nonnull view) {
+        return [view isKindOfClass:cls];
+    }];
+}
+
+- (void)tx_removeSubviews
+{
+    for (UIView *subview in self.subviews)
+    {
+        [subview removeFromSuperview];
+    }
+}
+
 @end

@@ -10,6 +10,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIImage (TXFire)
 
 /// @see [UIImage resizableImageWithCapInsets:]
@@ -28,3 +30,5 @@
 + (UIImage *)tx_imageWithColor:(UIColor *)color; // (1, 1) pure color image. not ellipse.
 
 @end
+
+NS_ASSUME_NONNULL_END
