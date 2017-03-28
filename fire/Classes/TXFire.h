@@ -20,9 +20,11 @@
 #import "NSDate+TXFire.h"
 #import "NSBundle+TXFire.h"
 #import "NSRegularExpression+TXFire.h"
+#import "NSIndexSet+TXFire.h"
 
 #import "UIColor+TXFire.h"
 #import "UIImage+TXFire.h"
+#import "UIImage+TXGIF.h"
 #import "UIViewController+TXFire.h"
 #import "UIApplication+TXFire.h"
 #import "UIView+TXFire.h"

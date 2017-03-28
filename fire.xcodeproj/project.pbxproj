@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DFC68AB095053E3C99767BD /* libPods-fire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB243DC348B287388B40525 /* libPods-fire.a */; };
+		B708A3431E8A72A800D1AA57 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B708A3421E8A72A800D1AA57 /* TableViewController.m */; };
 		B728B5B11E6947F0009F943F /* UILabel+TXChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = B728B5B01E6947F0009F943F /* UILabel+TXChainable.m */; };
 		B728B5B41E69481C009F943F /* UIView+TXChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = B728B5B31E69481C009F943F /* UIView+TXChainable.m */; };
 		B728B5B71E69489C009F943F /* UIScrollView+TXFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B728B5B61E69489C009F943F /* UIScrollView+TXFire.m */; };
@@ -54,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		7EB243DC348B287388B40525 /* libPods-fire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B708A3411E8A72A800D1AA57 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B708A3421E8A72A800D1AA57 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B728B5AF1E6947F0009F943F /* UILabel+TXChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TXChainable.h"; sourceTree = "<group>"; };
 		B728B5B01E6947F0009F943F /* UILabel+TXChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TXChainable.m"; sourceTree = "<group>"; };
 		B728B5B21E69481C009F943F /* UIView+TXChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXChainable.h"; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 			children = (
 				B73A09851E684D71006E8FAB /* AppDelegate.h */,
 				B73A09861E684D71006E8FAB /* AppDelegate.m */,
+				B708A3411E8A72A800D1AA57 /* TableViewController.h */,
+				B708A3421E8A72A800D1AA57 /* TableViewController.m */,
 				B73A09B51E685319006E8FAB /* Classes */,
 				B73A098E1E684D71006E8FAB /* Assets.xcassets */,
 				B73A09931E684D71006E8FAB /* Info.plist */,
@@ -478,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B708A3431E8A72A800D1AA57 /* TableViewController.m in Sources */,
 				B7A89D0C1E7EC2310020F186 /* NSIndexSet+TXFire.m in Sources */,
 				B73A09CE1E68F4A9006E8FAB /* NSURL+TXFire.m in Sources */,
 				B73A09D91E69099F006E8FAB /* UIImage+TXFire.m in Sources */,

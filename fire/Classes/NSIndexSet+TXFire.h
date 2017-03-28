@@ -12,7 +12,7 @@
 
 @interface NSIndexSet (TXFire)
 
-/// order is ascending.
+/// ascending.
 - (NSArray<NSNumber *> *)tx_toArray;
 - (NSArray<NSNumber *> *)tx_toDescendingArray;
 

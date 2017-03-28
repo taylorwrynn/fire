@@ -16,4 +16,9 @@
 - (void)tx_scrollToTopWithAnimated:(BOOL)animated;
 - (void)tx_scrollToLeftWithAnimated:(BOOL)animated;
 
+/// negative means scrolled outside top of content. 0 means just right visit the top of content. positive means scrolled down.
+- (CGFloat)tx_offsetOutsideOfTop;
+/// negative means scrolled outside bottom of content. 0 means just right visit bottom of content. positive means scrolled up.
+- (CGFloat)tx_offsetOutsideOfBottom;
+
 @end

@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "Classes/TXFire.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,10 +28,10 @@
     
     Dlogvars(@"abc", @"def");
     
-    UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    viewController.navigationItem.title = @"Test";
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UIViewController *vc = [[TableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    vc.navigationItem.title = @"Test";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.view.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
     

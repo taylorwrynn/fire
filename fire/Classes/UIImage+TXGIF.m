@@ -22,7 +22,7 @@ static inline CGImageSourceRef CreateImageSourceWithFile(NSString *path)
     return CGImageSourceCreateWithData(data, nil);
 }
 
-static inline  CFArrayRef CreateImagesWithSourceAndCount(CGImageSourceRef const source, size_t const count)
+static inline __unused  CFArrayRef CreateImagesWithSourceAndCount(CGImageSourceRef const source, size_t const count)
 {
     CFMutableArrayRef results = CFArrayCreateMutable(kCFAllocatorDefault, count, &kCFTypeArrayCallBacks);
     

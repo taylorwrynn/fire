@@ -26,4 +26,14 @@
     [self setContentOffset:offset animated:animated];
 }
 
+- (CGFloat)tx_offsetOutsideOfTop
+{
+    return self.contentOffset.y + self.contentInset.top;
+}
+
+- (CGFloat)tx_offsetOutsideOfBottom
+{
+    return (self.contentSize.height - (self.bounds.size.height - self.contentInset.bottom)) - self.contentOffset.y;
+}
+
 @end
